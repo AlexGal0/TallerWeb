@@ -1,0 +1,39 @@
+<div class="container">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <span class="user">{{ mySelectedUser.name | uppercase}} </span>
+      <br />
+      Username: 
+      <span class="username">@{{ mySelectedUser.username }} </span>
+      <br />
+      Email:
+      <span class="username">{{ mySelectedUser.email | lowercase}} </span>
+      <br />
+      Phone:
+      <span class="username">{{ mySelectedUser.phone}} </span>
+      <br />
+      Web:
+      <span class="username">{{ mySelectedUser.website}} </span>
+      <br />
+      <button mat-button (click) = "location()">
+        <span>Location</span>
+      </button>
+      <br />
+      <br />
+      <button mat-button (click) = "todoComplete()">
+        <span>Todo Complete</span>
+      </button>
+      <br />
+      <br />
+      <button mat-button (click) = "todoIncomplete()">
+        <span>Todo Incomplete</span>
+      </button>
+      
+    </mat-card-content>
+    
+  </mat-card>
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <div class="listado">
+      <div *ngFor="let todo of listTodo; let i = index">
+        <app-todo-view
+        [mySelectedTodo]="todo"
+        ></app-todo-view>  
+        
+      </div>
+    </div>
+</div>
+  

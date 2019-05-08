@@ -3,10 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  urlUsers:  "https://jsonplaceholder.typicode.com/users",
+  urlTodo :  "https://jsonplaceholder.typicode.com/todos",
+  urlGeo  :  "https://www.google.com/maps/dir/?api=1&destination="
 };
 
+
 /*
+
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *
